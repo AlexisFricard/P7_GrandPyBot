@@ -9,6 +9,7 @@ app = Flask(__name__)
 app.config.from_object('config')
 
 @app.route('/')
+@app.route('/index/')
 def index():
         gm_api_key = config.GM_API_KEY
         return render_template('index.html', gm_api_key=gm_api_key)

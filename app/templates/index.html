@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="static/css/style.css" />
+        <title> GrandPy Bot le papy-robot 🤖👴 </title>
+        <script src="static/js/init_gm.js" async></script>
+    </head>
+
+    <body>
+        <nav id="left_column">
+            <header name="title">
+                <img src='static/img/title.png' alt="title" id="img_title">
+            </header>
+            
+            <div id="google_map_box">
+                <div id="map"></div>
+            </div>
+
+            <footer>
+                <div id="github">
+                    <div id="logo_box" class= "logo_box">
+                        <img src="static/img/logo_gh.png" id="logo_github">
+                    </div>
+                    <p id="on_gh" >     On GitHub</p>
+                </div>
+                <p id="end">
+                    2021 - Created by Alexis Fricard
+                </p>
+
+            </footer>
+        </nav>
+
+        <div id="right_column">
+            <div id="dial_box" name="dial_box">
+                <article id="dial_area" name="dialogue_area">
+                    <div id="robot_box">
+                        <div id="robot">
+                            Hello je suis GrandPy Bot, le papy robot 🤖👴 !! </br>
+                            </br>
+                            Demandez-moi un lieu 🏘️ Je vous donnerai son adresse 📍 </br>
+                        </div>
+                        <div id="emot_talker">🤖</div>
+                    </div>
+                </article>
+            </div>
+
+            <form name="input_msg" id="input_message" action="" >
+                <textarea type="textarea" value="" name="textarea" id='user_text' placeholder="Entrez votre message ici ..." required="" ></textarea>
+                <button type="button" id="submit_button"><img src='static/img/logo_send.png' id="img_send" ></button>
+            </form>
+        </div>
+    <script
+        defer src="https://maps.googleapis.com/maps/api/js?key={{ gm_api_key }}&callback=initMap&libraries=&v=weekly"
+        async
+    ></script>
+    <script type="module" src="static/js/script.js" async></script>
+    </body>
+</html>
+

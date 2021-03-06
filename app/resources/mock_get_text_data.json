@@ -1,0 +1,14 @@
+{
+    "batchcomplete": true, 
+    "query": {
+        "pages": 
+        [
+            {
+                "pageid": 1359783, 
+                "ns": 0, 
+                "title": "Tour Eiffel", 
+                "extract": "La tour Eiffel  est une tour de fer puddlé de 324 mètres de haut"
+            }
+        ]
+    }
+}

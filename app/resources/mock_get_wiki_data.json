@@ -1,0 +1,14 @@
+{
+    "batchcomplete": true,
+    "query": {
+        "geosearch": [{
+            "pageid": 1359783,
+             "ns": 0,
+             "title": "Tour Eiffel",
+             "lat": 48.858296,
+             "lon": 2.294479,
+             "dist": 8.2,
+             "primary": true
+             }]
+        }
+}

@@ -1,0 +1,25 @@
+{
+    "candidates": [
+        {
+            "formatted_address": "18 Rue Alphonse Caillaud, 49400 Saumur, France",
+            "geometry": {
+                "location": {
+                    "lat": 47.2505692,
+                    "lng": -0.0876313
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 47.25190847989272,
+                        "lng": -0.08611437010727778
+                    },
+                    "southwest": {
+                        "lat": 47.24920882010728,
+                        "lng": -0.08881402989272222
+                    }
+                }
+            },
+            "name": "Musée du Moteur"
+        }
+    ],
+    "status": "OK"
+}

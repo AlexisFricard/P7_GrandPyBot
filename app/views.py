@@ -9,11 +9,9 @@ app = Flask(__name__)
 app.config.from_object('config')
 
 @app.route('/')
-@app.route('/index/')
 def index():
-        gm_api_key = config.GM_API_KEY
-        return render_template('index.html', gm_api_key=gm_api_key)
-
+        front_key = config.FRONT_KEY
+        return render_template('index.html', front_key=front_key)
 
 @app.route('/grandpy/', methods=['GET', 'POST']) 
 def grandpy():

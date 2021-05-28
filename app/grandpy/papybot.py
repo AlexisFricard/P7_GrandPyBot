@@ -13,6 +13,7 @@ import json
 from app.grandpy.modules.parser.parser import Parser
 from app.grandpy.modules.api_manager import api_manager as api
 
+
 class GrandPy:
 
     # CALLING FCTS TO ANALYSE USER_MESSAGE AND GET DATAS TO RETURN RESPONSE
@@ -23,7 +24,7 @@ class GrandPy:
         # Clean message
         user_message = par.clean_sentence(msg)
         # Initialize resp in json
-        json_resp = {"map_data" : "", "anecdote" : "", "greetings" : ""}
+        json_resp = {"map_data": "", "anecdote": "", "greetings": ""}
 
         # build response in json
         if len(user_message["msg"]) > 0:
@@ -45,11 +46,11 @@ class GrandPy:
 
         anecdote = "Désolé 🤷‍♂️ Mais je n'ai pas compris votre question ! 😇"
 
-        if map_data != None:
+        if map_data is not None:
             wiki_data = api.get_wiki_data(map_data["coordinates"])
             anecdote = None
-            if wiki_data != None:
+            if wiki_data is not None:
                 anecdote = api.get_text_data(wiki_data)
-        
+
         message = (map_data, anecdote)
         return message

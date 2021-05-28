@@ -7,8 +7,8 @@ PARSER MODULE
 Utility :   To parse, clean, end return data to build response
 Project :   GrandPy Bot, le papy robot
 """
-
 import json
+
 
 class Parser:
 
